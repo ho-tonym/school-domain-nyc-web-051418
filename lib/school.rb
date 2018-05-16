@@ -7,7 +7,6 @@ class School
     @roster = {}
   end
 
-
   def roster
     @roster
   end
@@ -27,6 +26,7 @@ class School
   def sort
     @roster.each do |number, student_names|
       student_names.sort!
+      binding.pry
     end
   end
 end
